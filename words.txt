@@ -33,12 +33,13 @@ Whitespace
 IETF
 Segment Routing
 Automation
-Orchestraion
+Orchestration
 Thought Leader
 RPKI
-Comodity
 Hijack
 LLU
 Takeaway
 RPSL
 Encryption
+*Speaker overruns*
+Commodity

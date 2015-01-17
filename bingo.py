@@ -23,7 +23,7 @@ def randomselection(source,amount):
 
 def writecsv(cards):
     header = []
-    for col in range(1,len(cards[0])):
+    for col in range(1,len(cards[0]) + 1):
         header.append("Word%d" % col)
     writer = csv.writer(sys.stdout, delimiter=',',quotechar='\"', quoting=csv.QUOTE_ALL)
     writer.writerow(header)
