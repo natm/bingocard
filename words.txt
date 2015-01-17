@@ -1,0 +1,42 @@
+SDN
+NFV
+Overlay
+Openstack
+*Radio mic fails*
+*Neil McRae asks a question*
+*Keith mixes up the presentation order*
+Reflection attack
+DNSSEC
+SystemD
+Whitebox
+BCP38
+CGNAT
+Web Scale
+100G
+IP Broker
+*Wifi dies*
+Internet Of Things
+Cloud
+Cyber
+Key Message
+Outsource
+Traditional
+Not a sales pitch
+Synergy
+Bigdata
+Darknet
+Next big thing
+Regional peering
+IPv6 only
+DDoS
+Whitespace
+IETF
+Segment Routing
+Automation
+Orchestraion
+Thought Leader
+RPKI
+Comodity
+Hijack
+Last mile
+Legacy

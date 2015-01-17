@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import csv
 import sys
 import random
 
@@ -20,11 +21,19 @@ def randomselection(source,amount):
     random.shuffle(selection)
     return selection[:amount]
 
+def writecsv(cards):
+    header = []
+    for col in range(1,len(cards[0])):
+        header.append("Word%d" % col)
+    writer = csv.writer(sys.stdout, delimiter=',',quotechar='\"', quoting=csv.QUOTE_ALL)
+    writer.writerow(header)
+    for card in cards:
+        writer.writerow(card)
+
 def main():
-    print "starting"
 
     cardsrequired = 100
-    percard = 16
+    percard = 9
 
     # load words from file
     words = loadwords("words.txt")
@@ -39,8 +48,8 @@ def main():
         while unique == False:
             card = randomselection(words,percard)
             unique = uniquecard(card,cards)
-        print card
         cards.append(card)
+    writecsv(cards)
 
     sys.exit(0)
 
