@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 
+import sys
 import random
 
 def loadwords(filename):
-    words = ["a","b","c","d","e","f","g","h","i"]
+    words = []
+    for line in open(filename,'r').readlines():
+       word = line.strip()
+       if len(word) > 0:
+           words.append(word.strip())
     return words
 
 def uniquecard(card,cards):
@@ -18,11 +23,15 @@ def randomselection(source,amount):
 def main():
     print "starting"
 
-    cardsrequired = 10
-    percard = 3
+    cardsrequired = 100
+    percard = 16
 
     # load words from file
     words = loadwords("words.txt")
+    if percard > words:
+        print "Not enough words provided"
+        sys.exit(1)
+
     cards = []
 
     for cardnum in range(1,cardsrequired + 1):
@@ -33,7 +42,7 @@ def main():
         print card
         cards.append(card)
 
-    return
+    sys.exit(0)
 
 
 if __name__ == '__main__':
