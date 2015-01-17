@@ -18,7 +18,7 @@ IP Broker
 Internet Of Things
 Cloud
 Cyber
-Key Message
+Key message
 Outsource
 Traditional
 Not a sales pitch
@@ -38,5 +38,7 @@ Thought Leader
 RPKI
 Comodity
 Hijack
-Last mile
-Legacy
+LLU
+Takeaway
+RPSL
+Encryption
